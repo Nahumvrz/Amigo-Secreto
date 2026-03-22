@@ -7,6 +7,11 @@ function adicionar() {
         return;
     }
 
+    if(amigos.includes(nome.value)) {
+        alert("Digite um nome diferente ou sobrenome a mais para diferenciar");
+        return;
+    }
+
     let amigosIncluidos = document.getElementById("lista-amigos");
         amigos.push(nome.value);
         if (amigosIncluidos.textContent == '') {
